@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp Algorithms</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <header>
+            <h1>freeCodeCamp Algorithms. Brought to life.</h1>
+            <h3>A graphical user interface for FCC's intermediate scripting challenges</h3>
+        </header>
+        <main>
+            <div class="div1">
+                <h2>01. Sum All Numbers in a Range</h2>
+                <div class="container">
+                    <div class="left-column">
+                        <p>We'll pass you an array of two numbers. Return the sum of those two numbers plus the sum of all the numbers between them. The lowest number will not always come first.</p>
+                        <br>
+                        <p>For example, sumAll([4,1]) should return 10 because sum of all the numbers between 1 and 4 (both inclusive) is 10.</p>
+                        <form id="form-01"> 
+                          <p>
+                            <label>1st Number:</label>
+                            <input type="text" id="01-a" name="01-a" size="10" value="0">
+                          </p> 
+                          <p>
+                            <label>2nd Number:</label>
+                            <input type="text" id="01-b" name="01-b" size="10" value="0">
+                          </p>
+                          <p>     
+                            <input type="button" onclick="sumAll()" value="Run Code">
+                          </p>    
+                        </form>
+                        <p class="output">Output: <span id="01-result"></span></p>
+                    </div>
+                    <div class="right-column">
+                        <h2>The Code</h2>
+                        <img src="pics/sum-all-range.png" alt="javascript code">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="algos.js"></script>
+    </body>
+
+</html> 

@@ -1,0 +1,84 @@
+* {
+    font-family: "Rajdhani";
+    margin: 0%;
+    line-height: 1.3;
+  }
+
+  header {
+    background-color: #448D76;
+    color: #ffffff;
+    padding: 1.5em;
+  }
+
+  .div1 {
+    background-color: #F7DDD4;
+    color: #FD4D0D;
+    min-height: 50vh;
+    padding: 1.5em;
+  }
+
+  .container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: minmax(400px, 500px) minmax(400px, 500px);
+    grid-template-rows: minmax(400px, 500px);
+    grid-gap: 35px;
+    padding: 2em;
+  }
+
+  .left-column {
+    background-color: #448D76;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 2%;
+  }
+
+  .output {
+      padding-left: 20px;
+  }
+
+  input[type=button] {
+    background: #FD4D0D;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3%;
+    text-transform: uppercase;
+  }
+
+
+  .right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+      background-color: #448D76;
+      color: #ffffff;
+      padding: 1rem;
+      border-radius: 2%;
+}
+
+.right-column img {
+    width: 100%;
+    border-radius: 2%;
+    margin-top: 5px;
+}
+
+  #form-01 {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; */
+    display: grid;
+    grid-template-columns: 100px;
+    grid-template-rows: 30px 30px 30px;
+    grid-gap: 25px;
+    margin-top: 25px;
+    padding: 20px;
+  }
+
+  
+
+  
+
+
+
