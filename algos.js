@@ -19,4 +19,36 @@ function sumAll() {
     document.getElementById('01-result').innerHTML = sum;
   };
   
+ // 02. DIFF-TWO-ARRAYS
+ 
+ function diffArray() {
+    let arr1 = document.getElementById('02-a').value.split(",").map(item => item.trim());
+    let arr2 = document.getElementById('02-b').value.split(",").map(item => item.trim());
+
+    let newArr = [];
+    let lesserArr;
+    let greaterArr;
   
+    if (arr1.length > arr2.length) {
+      greaterArr = arr1.slice();
+      lesserArr = arr2.slice();
+    } else {
+      greaterArr = arr2.slice();
+      lesserArr = arr1.slice();
+    }
+    
+    for (let i = 0; i < greaterArr.length; i++) {
+      if (lesserArr.includes(greaterArr[i]) === false) {
+          newArr.push(greaterArr[i])
+        }
+    }
+    for (let i = 0; i < lesserArr.length; i++) {
+      console.log(lesserArr[i])
+      if (greaterArr.includes(lesserArr[i]) === false) {
+          newArr.push(lesserArr[i])
+        }
+    }
+  
+    let sorted = newArr.sort(function(a, b){return a-b});
+    document.getElementById('02-result').innerHTML = newArr;
+  };
