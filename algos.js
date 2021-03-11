@@ -52,3 +52,20 @@ function sumAll() {
     let sorted = newArr.sort(function(a, b){return a-b});
     document.getElementById('02-result').innerHTML = newArr;
   };
+
+  // SEEK-AND-DESTROY
+
+  function destroyer(arr) {
+    
+    let arr1 = document.getElementById('03-a').value.split(",").map(item => item.trim());
+    let arr2 = document.getElementById('03-b').value.split(",").map(item => item.trim());
+
+    let filteredArr = arr1.filter(
+      function(e) {
+        return this.indexOf(e) < 0;
+      },
+      arr2
+  );
+    document.getElementById('03-result').innerHTML = filteredArr;
+  }
+  

@@ -74,9 +74,9 @@
     margin-top: 5px;
 }
 
-  #form-01, #form-02{
+  #form-01, #form-02, #form-03{
     display: grid;
-    grid-template-columns: 100px;
+    grid-template-columns: 150px;
     grid-template-rows: 30px 30px 30px;
     grid-gap: 25px;
     margin-top: 25px;

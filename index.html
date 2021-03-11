@@ -10,14 +10,44 @@
     <body>
         <header>
             <h1>freeCodeCamp Algorithms, Brought to life.</h1>
-            <h3>A graphical user interface for FCC's intermediate scripting challenges</h3>
+            <h3>A simple user interface for FCC's intermediate scripting challenges</h3>
         </header>
         <main>
+            <div class="div1">
+                <h2>03. Seek And Destroy</h2>
+                <div class="container">
+                    <div class="left-column">
+                        <p>You will be provided with an initial array (the first argument in the destroyer function), followed by one or more arguments. Remove all elements from the initial array that are of the same value as these arguments.</p>
+                        <br>
+                        <p>For example, destroyer([1, 2, 3, 1, 2, 3], 2, 3) should return [1, 1]</p>
+                        <form id="form-03"> 
+                          <p>
+                            <label>Initial Array:</label>
+                            <input type="text" id="03-a" name="03-a" size="50" placeholder="enter comma-separated values">
+                          </p> 
+                          <p>
+                            <label>Additional Arguments:</label>
+                            <input type="text" id="03-b" name="03-b" size="50" placeholder="enter comma-separated values">
+                          </p>
+                          <p>     
+                            <input type="button" onclick="destroyer()" value="Run Code">
+                          </p>    
+                        </form>
+                        <p class="output">Output:  <span id="03-result"></span></p>
+                    </div>
+                    <div class="right-column">
+                        <h2>The Code</h2>
+                        <img src="pics/seek-destroy.png" alt="javascript code">
+                    </div>
+                </div>
+            </div>
             <div class="div1">
                 <h2>02. Diff Two Arrays</h2>
                 <div class="container">
                     <div class="left-column">
                         <p>Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both. In other words, return the symmetric difference of the two arrays.</p>
+                        <br>
+                        <p>For example, [1, "calf", 3, "piglet"], [1, "calf", 3, 4] should return ["piglet", 4]</p>
                         <form id="form-02"> 
                           <p>
                             <label>1st Array:</label>
