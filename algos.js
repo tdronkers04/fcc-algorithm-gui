@@ -59,7 +59,7 @@ function sumAll() {
     
     let arr1 = document.getElementById('03-a').value.split(",").map(item => item.trim());
     let arr2 = document.getElementById('03-b').value.split(",").map(item => item.trim());
-
+    
     let filteredArr = arr1.filter(
       function(e) {
         return this.indexOf(e) < 0;
@@ -69,3 +69,25 @@ function sumAll() {
     document.getElementById('03-result').innerHTML = filteredArr;
   }
   
+  // WHEREFORE ART THOU
+
+//   function whatIsInAName(collection, source) {
+    
+//     let arr = [];
+    
+//     const srcKeys = Object.keys(source);
+//     console.log(srcKeys)
+  
+//     return collection.filter(function(obj){
+//       for (let i = 0; i < srcKeys.length; i++) {
+//         if (
+//           !obj.hasOwnProperty(srcKeys[i]) || //check if the object in the collection doesn’t have the key 
+//           obj[srcKeys[i]] !== source[srcKeys[i]] // the property value doesn’t match the value in source.
+//         ) {
+//           return false
+//         }
+//       }
+//       return true;
+//     })
+  
+//   }
