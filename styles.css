@@ -49,6 +49,13 @@
       text-shadow: 2px 2px 4px #FD4D0D;
   }
 
+  #output-04 {
+    margin-top: 10px;
+    padding-left: 5px;
+    font-size: large;
+    text-shadow: 2px 2px 4px #FD4D0D;
+  }
+
   input[type=button] {
     background: #FD4D0D;
     color: #ffffff;
@@ -84,19 +91,21 @@
     padding: 20px;
   }
 
-  #form-04 {
+  #container-1 {
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 30px 30px 30px;
-    grid-gap: 20px;
-    margin-top: 10px;
-    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 30px;
+    grid-gap: 10px;
+    margin-top: 0px;
+    margin-bottom: -10px;
+    padding: 1px;
   }
 
-  #form-04 input[type="text"] {
-    width: 100%;
-    box-sizing: border-box;
-    resize: none;
+  #container-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 30px;
+      grid-gap: 10px;
+      margin-top: 0px;
+      padding: 1px;
   }
-
-  

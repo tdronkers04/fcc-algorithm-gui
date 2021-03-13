@@ -71,23 +71,29 @@ function sumAll() {
   
   // WHEREFORE ART THOU
 
-//   function whatIsInAName(collection, source) {
+  function whatIsInAName(collection, source) {
     
-//     let arr = [];
+    collection = [{ first: document.getElementById('04-a').value, last: document.getElementById('04-b').value }, 
+                    { first: document.getElementById('04-c').value, last: document.getElementById('04-d').value }, 
+                    { first: document.getElementById('04-e').value, last: document.getElementById('04-f').value }];
     
-//     const srcKeys = Object.keys(source);
-//     console.log(srcKeys)
+    source = { last: document.getElementById('04-g').value };
+    
+    let srcKeys = Object.keys(source);
+
+    let result = collection.filter(function(obj) {
+        for (var i = 0; i < srcKeys.length; i++) {
+          if (
+            !obj.hasOwnProperty(srcKeys[i]) ||
+            obj[srcKeys[i]] !== source[srcKeys[i]]
+          ) {
+            return false;
+          }
+        }
+        return true;
+      });
+
+    return document.getElementById('04-result').innerHTML = JSON.stringify(result);
+  };
+
   
-//     return collection.filter(function(obj){
-//       for (let i = 0; i < srcKeys.length; i++) {
-//         if (
-//           !obj.hasOwnProperty(srcKeys[i]) || //check if the object in the collection doesn’t have the key 
-//           obj[srcKeys[i]] !== source[srcKeys[i]] // the property value doesn’t match the value in source.
-//         ) {
-//           return false
-//         }
-//       }
-//       return true;
-//     })
-  
-//   }
