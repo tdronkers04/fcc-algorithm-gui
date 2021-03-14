@@ -53,7 +53,7 @@ function sumAll() {
     document.getElementById('02-result').innerHTML = newArr;
   };
 
-  // SEEK-AND-DESTROY
+  // 03. SEEK-AND-DESTROY
 
   function destroyer(arr) {
     
@@ -69,7 +69,7 @@ function sumAll() {
     document.getElementById('03-result').innerHTML = filteredArr;
   }
   
-  // WHEREFORE ART THOU
+  // 04. WHEREFORE-ART-THOU
 
   function whatIsInAName(collection, source) {
     
@@ -96,4 +96,19 @@ function sumAll() {
     return document.getElementById('04-result').innerHTML = JSON.stringify(result);
   };
 
+  // 05. SPINAL-TAP-CASE
+
+  function spinalCase() {
+  
+    let str = document.getElementById('05-a').value;
+
+    let newStr = str.replace(/([a-zA-Z])(?=[A-Z])/g, '$1-').toLowerCase();
+    
+    const result = /(_|-|\s)/g.test(newStr); // contains underscore, hyphen, or space
+    
+    if (result === true) {
+      newStr = newStr.replace(/(_|\s)/g, "-").toLowerCase();
+    }
+    return document.getElementById('05-result').innerHTML = newStr;;
+  }
   
