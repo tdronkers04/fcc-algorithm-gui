@@ -111,4 +111,8 @@ function sumAll() {
     }
     return document.getElementById('05-result').innerHTML = newStr;;
   }
+
+  // 06. PIG-LATIN
+
+  
   
