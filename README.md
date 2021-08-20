@@ -2,6 +2,6 @@
 
 A graphical user interface for the algorithm challenges on freeCodeCamp.
 
-Deloyed site: 
+Deployed site: 
 
 https://www.fcc-algorithms.com
